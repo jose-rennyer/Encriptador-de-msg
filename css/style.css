@@ -1,3 +1,6 @@
+*{
+    font-family:'Spline Sans Mono', sans-serif;
+}
 .main{
     display:flex;
     justify-content:space-around;
@@ -12,7 +15,6 @@
 .area-desencriptar{
     box-sizing:border-box;
     width:45%;
-    background-color:blue;
     padding:10px;
     vertical-align:top;
 }
@@ -25,6 +27,8 @@
     width:100%;
     height:400px;
     resize:none;
+    outline:none;
+    font-size:25px;
 }
 .info-encript{
     padding:10px 0px;
@@ -71,16 +75,43 @@
 .msg-desencript-area{
     width:40%;
     height:90%;
+    position:relative;
 }
 
 .msg-desencript{
     box-sizing:border-box;
-    background-color:red;
+    background:url("../images/High\ quality\ products\ 1\ 1.jpg");
+    background-repeat:no-repeat;
+    background-position-x:50%;
+    background-position-y:20%;
+    background-size:80%;
+    overflow:auto;
+    word-wrap:break-word;
+    line-height:1.5em;
+    padding:10px;
+    border:1px solid #999999;
+    border-radius:10px;
     width:100%;
     height:90%;
     display:flex;
     flex-direction:column;
 }
+
+.msg-background{
+    width:75%;
+    margin:0 auto;
+    font-size:25px;
+    text-align:center;
+    position:absolute;
+    top:52%;
+    left:50px;
+}
+.msg-background > p{
+    font-size:16px;
+    margin-top:20px;
+}
+
+
 .copiar{
     width:100%;
     background-color:lightblue;
@@ -98,4 +129,11 @@ footer{
     align-items:center;
     justify-content:center;
     font-size:25px;
+}
+
+.background-branco{
+    background:none;
+}
+.invisivel{
+    opacity:0;
 }

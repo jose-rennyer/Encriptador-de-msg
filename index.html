@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300&display=swap" rel="stylesheet">
         <title>Desencriptador</title>
     </head>
     <body>
@@ -19,7 +20,7 @@
 
             <section class="area-desencriptar">
                 <div class="desencript-block">
-                    <textarea class="field-desencriptar"></textarea>
+                    <textarea class="field-desencriptar" placeholder="NADA ESCRITO POR AQUI"></textarea>
                 </div>
                 <p class="info-encript">Apenas letras minusculas e sem acentos</p>
                 <div class="bts-encript-area">
@@ -29,7 +30,10 @@
             </section>
 
             <section class="msg-desencript-area">
-                <div class="msg-desencript">
+                <div class="msg-desencript"></div>
+                <div class="msg-background">
+                    Nenhuma mensagem encontrada
+                    <p>Digite o texto no outro bloco para que ele possa se encriptar ou desencriptar aqui</p>
                 </div>
                 <button class="bt copiar">Copiar</button>
             </section>
@@ -40,5 +44,6 @@
             <p>Desencriptador desenvolvido por José Rennyer. <a href="https://www.linkedin.com/in/jos%C3%A9-rennyer-813233231/">Linkedin</a></p>
         </footer>
         <script src="script/script.js"></script>
+        <script src="script/copiar.js"></script>
     </body>
 </html>
