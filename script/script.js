@@ -18,7 +18,7 @@ buttonEncript.addEventListener("click", function(){
                 novaPalavra = novaPalavra.replaceAll(letras[i][0], letras[i][1])
             }
         }
-        msgEncript.textContent = novaPalavra;
+        msgEncript.value = novaPalavra;
         msgEncript.classList.add("background-branco")
         removeElemento(".msg-background");
     }  
@@ -32,7 +32,7 @@ buttonDesencript.addEventListener("click", function(){
                 palavraDesencriptada = palavraDesencriptada.replaceAll(letras[i][1], letras[i][0])
             }
         }
-        msgEncript.innerHTML = palavraDesencriptada;
+        msgEncript.value = palavraDesencriptada;
         msgEncript.classList.add("background-branco")
         removeElemento(".msg-background");
     }

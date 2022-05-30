@@ -1,10 +1,15 @@
 *{
     font-family:'Spline Sans Mono', sans-serif;
 }
+header{
+    margin:0 auto;
+    width:80%;
+    margin-top:20px;
+}
 .main{
     display:flex;
     justify-content:space-around;
-    padding:30px 0px;
+    padding:20px 0px;
     width:80%;
     height:600px;
     margin:0 auto;
@@ -95,6 +100,8 @@
     height:90%;
     display:flex;
     flex-direction:column;
+    outline:0;
+    resize:none;
 }
 
 .msg-background{
@@ -136,4 +143,79 @@ footer{
 }
 .invisivel{
     opacity:0;
+}
+
+/*Responsividade mobile adpatada para os publicos*/
+
+@media screen and (max-width:500px){
+    .main{
+        width:auto;
+        height:1200px;
+        padding:20px 25px;
+        flex-direction:column;
+    }
+    .area-desencriptar{
+        width:100%;
+        height:50%;
+    }
+    .msg-desencript-area{
+        width:100%;
+        height:50%;
+    }
+    .bts-encript-area{
+        flex-direction:column;
+    }
+    .bt{
+        width:100%;
+    }
+
+    .msg-desencript{
+        width:100%;
+        height:500px;
+        margin-top:40px;
+    }
+    .msg-background{
+        color:red;
+        top:55%;
+        left:0;
+        right:0;
+        font-weight:bold;
+    }
+    .msg-background > p{
+        font-size:18px;
+    }
+
+    footer{
+        margin:30px auto;
+        font-size:15px;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:1050px){
+    .main{
+        width:auto;
+        height:1200px;
+        padding:20px 25px;
+        flex-direction:column;
+    }
+    .area-desencriptar{
+        width:100%;
+        height:50%;
+    }
+    .msg-desencript-area{
+        width:100%;
+        height:50%;
+    }
+    .msg-background{
+        color:red;
+        text-shadow:1px 1px 3px #000;
+        font-size:35px;
+        top:55%;
+        left:0;
+        right:0;
+        font-weight:bold;
+    }
+    .msg-background > p{
+        font-size:25px;
+    }
 }
